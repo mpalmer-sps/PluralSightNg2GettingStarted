@@ -6,6 +6,7 @@ import { AppComponent } from './components/app/app.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductListComponent } from './components/products/product-list.component';
 import { ProductFilterPipe } from './components/products/product-filter.pipe';
+import { StarComponent } from './components/shared/star.component';
 
 export const sharedConfig: NgModule = {
     bootstrap: [ AppComponent ],
@@ -13,7 +14,8 @@ export const sharedConfig: NgModule = {
         AppComponent,        
         HomeComponent,        
         ProductListComponent,
-        ProductFilterPipe
+        ProductFilterPipe,
+        StarComponent
     ],
     imports: [
         FormsModule,
