@@ -51,6 +51,7 @@ export class ProductListComponent implements OnInit {
         this.showImage = !this.showImage;
     }
 
+    // init the component and subscribe to the Web API in the Product controller
     ngOnInit(): void {
         console.log('Calling the Product Service');
         this._productService.getProducts()
