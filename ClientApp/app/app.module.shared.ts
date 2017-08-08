@@ -8,6 +8,7 @@ import { ProductListComponent } from './components/products/product-list.compone
 import { ProductFilterPipe } from './components/products/product-filter.pipe';
 import { StarComponent } from './components/shared/star.component';
 
+
 export const sharedConfig: NgModule = {
     bootstrap: [ AppComponent ],
     declarations: [
@@ -17,7 +18,7 @@ export const sharedConfig: NgModule = {
         ProductFilterPipe,
         StarComponent
     ],
-    imports: [
+    imports: [        
         FormsModule,
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
